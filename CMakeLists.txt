@@ -46,10 +46,6 @@ add_subdirectory(type-deduction)
 add_subdirectory(type-traits)
 add_subdirectory(sfinae)
 add_subdirectory(vocabulary-types)
-# add_subdirectory(coroutines)
-# add_subdirectory(stdlib-features)
-# add_subdirectory(core-features)
-# add_subdirectory(templates)
 
 # Exercises
 # add_subdirectory(_exercises/ex-compare)

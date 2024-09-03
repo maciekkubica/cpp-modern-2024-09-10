@@ -1,4 +1,4 @@
-# Szkolenie - C++20 #
+# Szkolenie - Modern C++ #
 
 ## Konfiguracja środowiska
 
@@ -16,13 +16,29 @@ Przed szkoleniem należy zainstalować:
       * vcpkg package manager
       * C++ Modules
 
-  * gcc-14
+  * gcc-14 (Linux lub WSL)
     * [CMake > 3.28](https://cmake.org/)
-    * proszę sprawdzić wersję w linii poleceń        
+      * proszę sprawdzić wersję w linii poleceń        
   
-      ```
-      cmake --version
-      ```
+        ```
+        cmake --version
+        ```
+
+    * vcpkg
+      * Instalacja
+        1. Proszę sklonować repozytorium vcpkg z Github
+           ```
+           git clone https://github.com/microsoft/vcpkg.git
+           ```
+        2. Uruchomić skrypt boostrap
+           ```
+           cd vcpkg && ./bootstrap-vcpkg.sh
+           ```
+        3. Dodać ścieżkę do zmiennej PATH
+           ```
+           export VCPKG_ROOT=/path/to/vcpkg
+           export PATH=$VCPKG_ROOT:$PATH
+           ```
       
     * IDE: Visual Studio Code
       * [Visual Studio Code](https://code.visualstudio.com/)
@@ -43,5 +59,4 @@ Jeśli uczestnicy szkolenia korzystają w pracy z Docker'a, to należy zainstalo
 * Zainstalować wtyczki
   * Live Share
   * Dev Containers ([wymagania](https://code.visualstudio.com/docs/devcontainers/containers#_system-requirements))
-    * po instalacji wtyczki - należy otworzyć w VS Code folder zawierający sklonowane repozytorium i
-      z palety poleceń (Ctrl+Shift+P) wybrać opcję **Dev Containers: Rebuild and Reopen in Container**
+    * po instalacji wtyczki - należy otworzyć w VS Code folder zawierający sklonowane repozytorium i z palety poleceń (Ctrl+Shift+P) wybrać opcję **Dev Containers: Rebuild and Reopen in Container**
