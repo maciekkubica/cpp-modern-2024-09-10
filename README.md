@@ -1,5 +1,9 @@
 # Szkolenie - Modern C++ #
 
+## Slajdy
+
+* https://infotraining.bitbucket.io/cpp-modern-autodesk/
+
 ## Konfiguracja środowiska
 
 Proszę wybrać jedną z poniższych opcji:
