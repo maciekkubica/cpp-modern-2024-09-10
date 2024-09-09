@@ -6,6 +6,9 @@
 *.user
 *.sln.docstates
 
+# solutions
+_solutions/
+
 # Build results
 [Dd]ebug/
 [Rr]elease/
