@@ -1,11 +1,10 @@
-#include "catch.hpp"
-
 #include <algorithm>
 #include <iostream>
 #include <memory>
 #include <numeric>
 #include <string>
 #include <vector>
+#include <catch2/catch_test_macros.hpp>
 
 using namespace std;
 
