@@ -32,35 +32,35 @@ namespace helpers
         std::cout << "]\n";
     }
 
-    template <size_t Size>
-    [[nodiscard]] constexpr auto create_numeric_dataset(uint32_t seed = 42, int low = -100, int high = 100)
-    {
-        std::vector<int> data(Size);
-        data.reserve(Size);
+    // template <size_t Size>
+    // [[nodiscard]] constexpr auto create_numeric_dataset(uint32_t seed = 42, int low = -100, int high = 100)
+    // {
+    //     std::vector<int> data(Size);
+    //     data.reserve(Size);
 
-        auto uniform_distr = [low, high](auto&& rnd_gen) {
-            uint32_t width = high - low;
-            return (rnd_gen() % width) + low;
-        };
+    //     auto uniform_distr = [low, high](auto&& rnd_gen) {
+    //         uint32_t width = high - low;
+    //         return (rnd_gen() % width) + low;
+    //     };
 
-        if (std::is_constant_evaluated())
-        {
-            random::PCG pcg_rnd{seed};
+    //     if (std::is_constant_evaluated())
+    //     {
+    //         random::PCG pcg_rnd{seed};
 
-            std::ranges::generate(data, [&] { return uniform_distr(pcg_rnd); });
-        }
-        else
-        {
-            std::mt19937 mt_rnd{seed};
+    //         std::ranges::generate(data, [&] { return uniform_distr(pcg_rnd); });
+    //     }
+    //     else
+    //     {
+    //         std::mt19937 mt_rnd{seed};
 
-            std::ranges::generate(data, [&] { return uniform_distr(mt_rnd); });
-        }
+    //         std::ranges::generate(data, [&] { return uniform_distr(mt_rnd); });
+    //     }
 
-        std::array<int, Size> result_data{};
-        std::ranges::copy(data, result_data.begin());
+    //     std::array<int, Size> result_data{};
+    //     std::ranges::copy(data, result_data.begin());
 
-        return result_data;
-    }
+    //     return result_data;
+    // }
 } // namespace helpers
 
 #endif

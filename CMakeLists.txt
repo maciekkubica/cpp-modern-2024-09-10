@@ -46,6 +46,7 @@ add_subdirectory(type-deduction)
 add_subdirectory(type-traits)
 add_subdirectory(sfinae)
 add_subdirectory(vocabulary-types)
+add_subdirectory(move-semantics)
 
 # Exercises
 add_subdirectory(_exercises/ex-compare)

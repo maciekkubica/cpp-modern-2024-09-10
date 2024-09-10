@@ -9,12 +9,12 @@ using namespace std::literals;
 
 TEST_CASE("ranges", "[ranges]")
 {
-    auto data = helpers::create_numeric_dataset<20>(42);
-    helpers::print(data, "data");
+    // auto data = helpers::create_numeric_dataset<20>(42);
+    // helpers::print(data, "data");
 
-    std::vector words = {"one"s, "two"s, "three"s, "four"s, "five"s, "six"s, "seven"s, "eight"s, "nine"s, "ten"s, 
-                         "eleven"s, "twelve"s, "thirteen"s, "fourteen"s, "fifteen"s, "sixteen"s, "seventeen"s, "eighteen"s, "nineteen"s, "twenty"s};
-    helpers::print(words, "words");
+    // std::vector words = {"one"s, "two"s, "three"s, "four"s, "five"s, "six"s, "seven"s, "eight"s, "nine"s, "ten"s, 
+    //                      "eleven"s, "twelve"s, "thirteen"s, "fourteen"s, "fifteen"s, "sixteen"s, "seventeen"s, "eighteen"s, "nineteen"s, "twenty"s};
+    // helpers::print(words, "words");
 
     SECTION("algorithms")
     {
