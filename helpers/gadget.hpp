@@ -12,7 +12,7 @@ namespace Helpers
         std::string name_;
 
     public:
-        static int gen_id()
+        static const int gen_id()
         {
             static int id_seed;
             return ++id_seed;
